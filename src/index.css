@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  min-height: 100vh;
+  background: #fbfeff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header {
+  background-color: #282c34;
+  background-color: #9167e0;
+  /* min-height: 100vh; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  border-radius: 0 0 220px 220px;
+  padding: 80px 50px 130px;
+  margin: 0 -50px;
+  background: linear-gradient(170deg, rgb(137 94 216 / 84%) 0%, #6231bf 100%);
+}
+
+h1 {
+
+}
+
+main {
+  border-radius: 8px;
+  background-color: #fff;
+  margin: -80px 60px 0;
+  box-shadow: 0px 9px 18px 0px rgb(105 58 195 / .20);
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 50vh;
+}
+
+article {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article span {
+  width: 60px;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  border: 1px solid #ececec;
+  text-align: center;
+}
+
+article button {
+  background: none;
+  border: 0;
+  font-weight: 800;
+}
+
+article:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 6px 13px 0px rgb(105 58 195 / .20);
+  text-align: center;
+}
+
+button {
+  outline: 0;
+}
+
+footer button {
+  border: 0;
+  border-radius: 100px;
+  background-color: #693ac3;
+  color: #fff;
+  font-size: 26px;
+  line-height: 15px;
+  padding: 16px;
+  box-shadow: 0px 4px 6px 0px rgb(105 58 195 / 84%);
+  transform: translate3d(0px, -10px, 0px);
 }
