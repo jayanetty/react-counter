@@ -9,22 +9,25 @@ class NewCounter extends React.Component {
     }
 
     render() {
+        const count = this.state.count;
+
         const reduceCounter = () => {
-            this.setState({ count: this.state.count - 1})
+            this.setState({ count: count - 1})
         }
 
         const increaseCounter = () => {
-            this.setState({ count: this.state.count + 1 })
-        }
-
-        const counterValue = () => {
+            this.setState({ count: count + 1 })
         }
 
         return (
             <article>
+                <p>sss { this.props.id }</p>
                 <button onClick={reduceCounter}>-</button>
-                <span>{ this.state. count }</span>
+                <span>{ this.state.count }</span>
                 <button onClick={increaseCounter}>+</button>
+                <button className="close"
+                    onClick={() => this.props.onDelete(this.props.id)}
+                    >x</button>
             </article>
         )
     }

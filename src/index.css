@@ -57,6 +57,11 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
 }
 
 article span {
@@ -72,6 +77,16 @@ article button {
   background: none;
   border: 0;
   font-weight: 800;
+}
+
+article button.close {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+}
+
+article:hover button.close {
+  opacity: 1;
 }
 
 article:last-child {
